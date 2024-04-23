@@ -2,7 +2,3 @@ coverage
 dist
 lib
 es
-types
-test/*.d.ts
-test/*.map
-tsconfig.tsbuildinfo

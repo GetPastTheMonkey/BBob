@@ -48,17 +48,17 @@ suite
     });
   })
   .add('@bbob/parser lexer old', () => {
-    const lexer1 = require('./lexer_old');
+    const lexer1 = require('@bbob/parser/lib/lexer_old');
 
-    return require('@bbob/parser').parse(stub, {
+    return require('@bbob/parser/lib/index').parse(stub, {
       onlyAllowTags: ['ch'],
       createTokenizer: lexer1.createLexer,
     });
   })
   .add('@bbob/parser lexer', () => {
-    const lexer2 = require('@bbob/parser');
+    const lexer2 = require('@bbob/parser/lib/lexer');
 
-    return require('@bbob/parser').parse(stub, {
+    return require('@bbob/parser/lib/index').parse(stub, {
       onlyAllowTags: ['ch'],
       createTokenizer: lexer2.createLexer,
     });

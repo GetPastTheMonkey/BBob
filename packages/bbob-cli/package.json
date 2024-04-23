@@ -2,30 +2,17 @@
   "name": "@bbob/cli",
   "version": "3.0.2",
   "description": "Comand line bbcode parser",
+  "main": "lib/cli.js",
   "bin": {
-    "bbob": "lib/cli.js"
+    "bbob": "bin/bbob"
   },
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
-  "browser": "dist/index.js",
-  "browserName": "BbobCli",
-  "types": "types/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./types/index.d.ts",
-      "import": "./es/index.js",
-      "require": "./lib/index.js",
-      "browser": "./dist/index.min.js",
-      "umd": "./dist/index.min.js"
-    }
+  "directories": {
+    "lib": "lib"
   },
   "dependencies": {
-    "@bbob/html": "*",
-    "@bbob/preset-html5": "*"
-  },
-  "devDependencies": {
-    "@types/node": "20.11.30"
+    "@bbob/html": "workspace:*",
+    "@bbob/preset-html5": "workspace:*",
+    "commander": "^2.15.1"
   },
   "repository": {
     "type": "git",
@@ -42,16 +29,9 @@
   },
   "homepage": "https://github.com/JiLiZART/bbob#readme",
   "scripts": {
-    "build:commonjs": "pkg-task",
-    "build:es": "pkg-task",
-    "build:umd": "pkg-task",
-    "build": "pkg-task",
-    "test": "pkg-task",
-    "lint": "pkg-task",
-    "size": "pkg-task",
-    "bundlesize": "pkg-task",
-    "types": "pkg-task",
-    "prepublishOnly": "npm run build"
+    "test": "../../scripts/pkg-task test",
+    "cover": "../../scripts/pkg-task cover",
+    "lint": "../../scripts/pkg-task lint"
   },
   "author": "Nikolay Kostyurin <jilizart@gmail.com>",
   "license": "MIT",

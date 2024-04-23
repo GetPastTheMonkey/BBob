@@ -27,7 +27,5 @@
       "message": "chore(release): publish %s"
     }
   },
-  "npmClient": "pnpm",
-  "useNx": true,
-  "useWorkspaces": true
+  "useNx": true
 }
