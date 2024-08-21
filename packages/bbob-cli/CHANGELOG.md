@@ -1,5 +1,15 @@
 # Change Log
 
+## 4.1.1
+
+### Patch Changes
+
+- [`180069f`](https://github.com/JiLiZART/BBob/commit/180069f2dd1f04977c2d69fc7944f79bdfb20eac) Thanks [@JiLiZART](https://github.com/JiLiZART)! - Removed `defaultProps` and
+  Warning for deprecated defaultProps
+- Updated dependencies [[`180069f`](https://github.com/JiLiZART/BBob/commit/180069f2dd1f04977c2d69fc7944f79bdfb20eac)]:
+  - @bbob/html@4.1.1
+  - @bbob/preset-html5@4.1.1
+
 ## 4.1.0
 
 ### Minor Changes
