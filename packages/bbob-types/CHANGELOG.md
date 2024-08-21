@@ -1,5 +1,12 @@
 # @bbob/types
 
+## 4.1.1
+
+### Patch Changes
+
+- [`180069f`](https://github.com/JiLiZART/BBob/commit/180069f2dd1f04977c2d69fc7944f79bdfb20eac) Thanks [@JiLiZART](https://github.com/JiLiZART)! - Removed `defaultProps` and
+  Warning for deprecated defaultProps
+
 ## 4.1.0
 
 ### Minor Changes
